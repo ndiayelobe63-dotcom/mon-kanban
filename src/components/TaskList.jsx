@@ -8,7 +8,7 @@ function TaskList() {
   useEffect(() => {
     async function chargerTaches() {
       const { data, error } = await supabase
-        .from('taches')
+        .from('tasks')
         .select('*')
       console.log(data)  
 
